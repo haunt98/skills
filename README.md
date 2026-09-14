@@ -5,6 +5,8 @@
 ```sh
 brew install jira-cli
 
+jira init
+
 rm -rf ~/.agents/skills/jira-cli
 cp -rf jira-cli ~/.agents/skills/
 ```
