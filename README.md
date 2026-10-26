@@ -22,15 +22,3 @@ jk auth login https://jenkins.company.example
 rm -rf ~/.agents/skills/jk
 cp -rf ./skills/jk ~/.agents/skills
 ```
-
-## [pchuri/confluence-cli](https://github.com/pchuri/confluence-cli)
-
-```sh
-go install github.com/avivsinai/jenkins-cli/cmd/jk@latest
-
-confluence init --domain confluence.company.example
-
-# Clone the repository
-rm -rf ~/.agents/skills/jk
-cp -rf ./skills/jk ~/.agents/skills
-```
