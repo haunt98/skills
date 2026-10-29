@@ -20,5 +20,21 @@ jk auth login https://jenkins.company.example
 
 # Clone the repository
 rm -rf ~/.agents/skills/jk
-cp -rf ./skills/jk ~/.agents/skills
+cp -rf ./skills/jk ~/.agents/skills/
+```
+
+# [cli/cli](https://github.com/cli/cli)
+
+```sh
+# Clone the repository
+rm -rf ~/.agents/skills/gh
+cp -rf ./skills/gh ~/.agents/skills/
+```
+
+# [anthropics/skills](https://github.com/anthropics/skills)
+
+```sh
+# Clone the repository
+rm -rf ~/.agents/skills/pdf
+cp -rf ./skills/pdf ~/.agents/skills/
 ```
