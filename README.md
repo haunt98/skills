@@ -61,4 +61,7 @@ cp -rf ./skills/docx ~/.agents/skills/
 
 rm -rf ~/.agents/skills/xlsx
 cp -rf ./skills/xlsx ~/.agents/skills/
+
+rm -rf ~/.agents/skills/pptx
+cp -rf ./skills/pptx ~/.agents/skills/
 ```
