@@ -22,6 +22,9 @@ jira issue view ISSUE-1 --plain
 # List issues
 jira issue list -a$(jira me) --plain
 
+# List issues with a JQL query
+jira issue list -q "project IN (PRJ1, PRJ2)" --plain
+
 # Comment on an issue (interactive prompt)
 jira issue comment add
 
