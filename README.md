@@ -39,29 +39,33 @@ cp -rf ./plugin/skills/use-modern-go ~/.agents/skills/
 
 ```sh
 # Clone the repository
-rm -rf ~/.agents/skills/ruff
-cp -rf ./plugins/astral/skills/ruff ~/.agents/skills/
-
-rm -rf ~/.agents/skills/uv
-cp -rf ./plugins/astral/skills/uv ~/.agents/skills/
-
-rm -rf ~/.agents/skills/ty
-cp -rf ./plugins/astral/skills/ty ~/.agents/skills/
+rm -rf ~/.agents/skills/astral
+mkdir -p ~/.agents/skills/astral
+cp -rf ./plugins/astral/skills/ruff ~/.agents/skills/astral/
+cp -rf ./plugins/astral/skills/uv ~/.agents/skills/astral/
+cp -rf ./plugins/astral/skills/ty ~/.agents/skills/astral/
 ```
 
 ## [anthropics/skills](https://github.com/anthropics/skills)
 
 ```sh
 # Clone the repository
-rm -rf ~/.agents/skills/pdf
-cp -rf ./skills/pdf ~/.agents/skills/
+rm -rf ~/.agents/skills/anthropics
+mkdir -p ~/.agents/skills/anthropics
+cp -rf ./skills/pdf ~/.agents/skills/anthropics/
+cp -rf ./skills/docx ~/.agents/skills/anthropics/
+cp -rf ./skills/xlsx ~/.agents/skills/anthropics/
+cp -rf ./skills/pptx ~/.agents/skills/anthropics/
+```
 
-rm -rf ~/.agents/skills/docx
-cp -rf ./skills/docx ~/.agents/skills/
+## [trailofbits/skills](https://github.com/trailofbits/skills)
 
-rm -rf ~/.agents/skills/xlsx
-cp -rf ./skills/xlsx ~/.agents/skills/
-
-rm -rf ~/.agents/skills/pptx
-cp -rf ./skills/pptx ~/.agents/skills/
+```sh
+# Clone the repository
+rm -rf ~/.agents/skills/trailofbits
+mkdir -p ~/.agents/skills/trailofbits
+cp -rf ./plugins/insecure-defaults ~/.agents/skills/trailofbits/
+cp -rf ./plugins/sharp-edges ~/.agents/skills/trailofbits/
+cp -rf ./plugins/static-analysis ~/.agents/skills/trailofbits/
+cp -rf ./plugins/supply-chain-risk-auditor ~/.agents/skills/trailofbits/
 ```
